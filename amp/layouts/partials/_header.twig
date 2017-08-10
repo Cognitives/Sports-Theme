@@ -3,27 +3,13 @@
     {% set user = _User.getUser()%}
 {% endif %}
 <header>
-    <div class="header__heading header__container">
-        <div class="header__heading-container">
-            <div class="header__heading--left">
-                {% set logoUrl = network.networkLogoLinkUrl %}
-                {% set logo = network.templatePath~'/static/images/themeLogo.svg'%}
-                {% if network.logoMedia | length > 0 %}
-                    {% set logo = _Media.getMediaUrl(network.logoMedia, 177, 65, {'crop': 'limit'} )%}
-                {% endif %}
-                <a href="{{logoUrl}}" class="header__heading-logo">
-                    <amp-img src="{{logo}}" width="177" height="65" layout="responsive"></amp-img>
-                </a>
-            </div>
-            <div class="header__heading--right">
-                <button class="header-icon-2" on='tap:sidebar.open'><i class="fa fa-navicon"></i></button>
-            </div>
-        </div>
-    </div>
+    <button class="header-icon-1" on='tap:sidebar.open'><i class="fa fa-navicon"></i></button>
+        {% set logoUrl = network.networkLogoLinkUrl %}
+    <a href="{{logoUrl}}" class="header-logo"></a>
 </header>
 <div class="header-clear"></div>
-<amp-sidebar id="sidebar" layout="nodisplay" side="right">
-    <div class="close__button" on='tap:sidebar.close' tabindex="1" role="1">
+<amp-sidebar id="sidebar" layout="nodisplay" side="left">
+    <div class="close__button" on='tap:sidebar.close' role="1" tabindex="1">
         <i class="fa fa-close"></i>
     </div>
     {% set menuItems = blogData.blogHeaderMenu %}
