@@ -14,7 +14,7 @@
     <link href='https://fonts.googleapis.com/css?family={{primaryFont}}' rel='stylesheet' type='text/css'> {% endif %} {% if secFont != "" %}
     <link href='https://fonts.googleapis.com/css?family={{secFont}}' rel='stylesheet' type='text/css'> {% endif %}
     <link rel="alternate" type="application/rss+xml" title="{{_Network.getNetworkTitle()}} -  RSS Feeds" href="http://{{networkData.defaultDomain['domain']}}/feed/rss" /> {% if _AppHelper.getApplicationEnv() == 'PROD'%}
-    <link rel="stylesheet" href="{{networkData.templatePath}}/static/css/concat.min.css?v=c0c8a39c" type="text/css" media="all" /> {% else %}
+    <link rel="stylesheet" href="{{networkData.templatePath}}/static/css/concat.min.css?v=692688c8" type="text/css" media="all" /> {% else %}
     <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/assets/scripts/plugins/jquery.fancybox/source/jquery.fancybox.css?ver=2" />
     <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/assets/scripts/plugins/jquery.noty-2.3.8/demo/animate.css?ver=1" />
     <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/assets/scripts/sdk/media-player/mediaelementplayer.css?ver=1" />
@@ -342,7 +342,7 @@
     $(document).ready(function() {
         $(window).on('scroll', function() {
             scrollPosition = $(this).scrollTop();
-            if (scrollPosition >= 130) {
+            if (scrollPosition >= 170) {
                 $('.menu-logo').hide();
                 $('.button-row ul').addClass('menu-shrink');
             } else {
@@ -352,10 +352,10 @@
         });
         //--------Open submenu function -----@start------
         $('.button-row > ul > li').hover(function() {
-            $('div.sub-menu', this).fadeIn(100);
+            $('div.sub-menu', this).show();
             $('.main-nav').css({ 'visibility': 'hidden' });
         }, function() {
-            $('div.sub-menu', this).fadeOut(100);
+            $('div.sub-menu', this).hide();
             $('.main-nav').css({ 'visibility': 'visible' });
         });
         $('.button-row > ul > li > div > a').focus(function() {
@@ -506,11 +506,11 @@
                 </div>
             </div>
             <div class="mobile-logo">
-                <a href="https://www.gc2018.com/" title="Home">
+                <a href="http://news.gc2018.com/" title="Home">
                     <img src="https://www.gc2018.com/sites/all/themes/custom/commgames/logo.png">
                 </a>
             </div>
-            <div class="header-element search-box">
+            <div class="header-element search-box" style="display:none;">
                 <a id="search-button" class="search-button"><span class="fa fa-search"><span class="element-invisible sr-only">Click to open Search Box</span></span></a>
             </div>
         </div>
@@ -567,6 +567,7 @@
                     <li><a href="https://www.gc2018.com/about/sustainability">Sustainability</a></li>
                     <li><a href="https://www.gc2018.com/about/faq">FAQ's</a></li>
                     <li><a href="https://www.gc2018.com/about/contact-us">Contact</a></li>
+                    <li><a href="https://www.gc2018.com/about/official-charity">Contact</a></li>
                 </ul>
             </li>
             <li><a href="">NEWS <i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -596,7 +597,7 @@
         <div class="button-row">
             <ul>
                 <li class="menu-logo">
-                    <a href="./"><img src="https://www.gc2018.com/sites/default/files/logo-dark.png"></a>
+                    <a href="http://news.gc2018.com/"><img src="https://www.gc2018.com/sites/default/files/logo-dark.png"></a>
                 </li>
                 <li>
                     <div id="the-games">
@@ -836,6 +837,9 @@
                                             </li>
                                             <li>
                                                 <a href="https://www.gc2018.com/about/contact-us" title="Contact" data-img-src="https://www.gc2018.com/sites/default/files/contact-thumb.jpg" data-p="We'd love to answer your questions and receive your feedback. Complete the form to assist us with directing your message to the appropriate area.">Contact</a>
+                                            </li>
+                                             <li>
+                                                <a href="https://www.gc2018.com/official-charity" title="Charity" data-img-src="https://www.gc2018.com/sites/default/files/charity-thumb.png" data-p="Established for more than 16 years, the Gold Coast Community Fund (GCCF) seeks to raise funds through a variety of initiatives creating central funding for distribution to charities, community organisations and individuals in need of ongoing and emergency support.">Charity</a>
                                             </li>
                                         </ul>
                                     </div>
