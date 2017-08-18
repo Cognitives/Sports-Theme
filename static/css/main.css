@@ -12519,7 +12519,23 @@ body.screen {
   line-height: 1.75rem;
   margin-bottom: 26px;
   padding: 0; }
-  .page-content article .content > span[style], .page-content article .content > u[style], .page-content article .content > p[style], .page-content article .content > ul[style], .page-content article .content > li[style], .page-content article .content > strong[style], .page-content article .content > b[style], .page-content article .content > h1[style], .page-content article .content > h2[style], .page-content article .content > h3[style], .page-content article .content > h4[style], .page-content article .content > h5[style], .page-content article .content > h6[style], .page-content article .content > figure[style], .page-content article .content > figcaption[style], .page-content article .content > img[style], .page-content article .content > blockquote[style] {
+  .page-content article .content > span[style],
+  .page-content article .content > u[style],
+  .page-content article .content > p[style],
+  .page-content article .content > ul[style],
+  .page-content article .content > li[style],
+  .page-content article .content > strong[style],
+  .page-content article .content > b[style],
+  .page-content article .content > h1[style],
+  .page-content article .content > h2[style],
+  .page-content article .content > h3[style],
+  .page-content article .content > h4[style],
+  .page-content article .content > h5[style],
+  .page-content article .content > h6[style],
+  .page-content article .content > figure[style],
+  .page-content article .content > figcaption[style],
+  .page-content article .content > img[style],
+  .page-content article .content > blockquote[style] {
     font-size: inherit !important;
     font-weight: inherit !important;
     line-height: inherit !important;
@@ -12600,6 +12616,8 @@ body.screen {
 
 .page-content .article-content-icons-wrapper {
   padding: 0; }
+  .page-content .article-content-icons-wrapper p img {
+    width: 100%; }
 
 .page-content .social-link-sidebar {
   list-style: none;
