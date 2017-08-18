@@ -12616,8 +12616,6 @@ body.screen {
 
 .page-content .article-content-icons-wrapper {
   padding: 0; }
-  .page-content .article-content-icons-wrapper p img {
-    width: 100%; }
 
 .page-content .social-link-sidebar {
   list-style: none;
@@ -12661,6 +12659,9 @@ body.screen {
     top: -20px;
     display: block;
     z-index: 0; }
+
+img.aligncenter {
+  width: 100%; }
 
 .related-posts {
   margin-bottom: 133px; }

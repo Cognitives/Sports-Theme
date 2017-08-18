@@ -250,11 +250,6 @@
 
     .article-content-icons-wrapper {
         padding: 0;
-        p {
-            img {
-                width: 100%;
-            }
-        }
     }
     .social-link-sidebar {
         list-style: none;
@@ -308,4 +303,8 @@
             z-index: 0;
         }
     }
+}
+
+img.aligncenter {
+    width: 100%;
 }
