@@ -1,0 +1,32 @@
+.loadMoreArticles {
+	&:focus, &:hover {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.card-lg a.card .content .author {
+    background-color: #2a3183;
+    color: #fff;
+}
+
+.page-content article .author-info {
+	padding-bottom: 5px;
+}
+
+.page-content article .author-info .name {
+	margin-bottom: 8px;
+}
+
+.page-content article header {
+	margin-bottom: 15px;
+}
+
+.media_embed {
+	.twitter-tweet {
+		margin: 10px auto;
+	}
+	iframe {
+		margin: 10px auto;
+	}
+}
