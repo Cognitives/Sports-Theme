@@ -13148,9 +13148,9 @@ body.channel.about .staff {
   margin-bottom: 15px; }
 
 .media_embed .twitter-tweet {
-  margin: 10px auto; }
+  margin: 20px auto !important; }
 
 .media_embed iframe {
-  margin: 10px auto; }
+  margin: 20px auto !important; }
 
 /*# sourceMappingURL=main.css.map */
