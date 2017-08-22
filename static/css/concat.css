@@ -13169,7 +13169,7 @@ body.channel.about .staff {
   opacity: 1; }
 
 .page-content article blockquote {
-  font-size: 1.125rem; }
+  font-size: 1.125rem !important; }
 
 /*# sourceMappingURL=main.css.map */
 
