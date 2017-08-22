@@ -13168,4 +13168,7 @@ body.channel.about .staff {
 .header > div .social-icons a:hover {
   opacity: 1; }
 
+.page-content article blockquote {
+  font-size: 1.125rem; }
+
 /*# sourceMappingURL=main.css.map */

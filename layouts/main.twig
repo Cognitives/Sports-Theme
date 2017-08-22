@@ -14,7 +14,7 @@
     <link href='https://fonts.googleapis.com/css?family={{primaryFont}}' rel='stylesheet' type='text/css'> {% endif %} {% if secFont != "" %}
     <link href='https://fonts.googleapis.com/css?family={{secFont}}' rel='stylesheet' type='text/css'> {% endif %}
     <link rel="alternate" type="application/rss+xml" title="{{_Network.getNetworkTitle()}} -  RSS Feeds" href="http://{{networkData.defaultDomain['domain']}}/feed/rss" /> {% if _AppHelper.getApplicationEnv() == 'PROD'%}
-    <link rel="stylesheet" href="{{networkData.templatePath}}/static/css/concat.min.css?v=25528995" type="text/css" media="all" /> {% else %}
+    <link rel="stylesheet" href="{{networkData.templatePath}}/static/css/concat.min.css?v=cdc0071e" type="text/css" media="all" /> {% else %}
     <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/assets/scripts/plugins/jquery.fancybox/source/jquery.fancybox.css?ver=2" />
     <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/assets/scripts/plugins/jquery.noty-2.3.8/demo/animate.css?ver=1" />
     <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/assets/scripts/sdk/media-player/mediaelementplayer.css?ver=1" />
@@ -572,8 +572,7 @@
             </li>
             <li><a href="">NEWS <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 <ul>
-                    <li><a href="https://www.gc2018.com/news">All</a></li>
-                    <li><a href="https://www.gc2018.com/news?type=article">Article</a></li>
+                    <li><a href="http://news.gc2018.com/">Articles</a></li>
                     <li><a href="https://www.gc2018.com/news?type=gallery">Gallery</a></li>
                     <li><a href="https://www.gc2018.com/news?type=video">Video</a></li>
                 </ul>
@@ -850,7 +849,7 @@
                 </li>
                 <li>
                     <div id="news">
-                        <a href="https://www.gc2018.com/news" title="NEWS">NEWS</a>
+                        <a href="" title="NEWS">NEWS</a>
                         <div class="sub-menu" id="news-sub-menu">
                             <div>
                                 <div class="description-wrap">
@@ -864,22 +863,17 @@
                                     <div class="col-3">
                                         <ul>
                                             <li>
-                                                <a href="https://www.gc2018.com/news" title="All" data-img-src="https://www.gc2018.com/sites/default/files/news-thumb.jpg" data-p="Take a look at all of the news, video and galleries related to the Games, QBR and athletes.">All</a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.gc2018.com/news?type=article" title="Articles" data-img-src="https://www.gc2018.com/sites/default/files/news-thumb.jpg" data-p="Take a look at all of the news, video and galleries related to the Games, QBR and athletes.">Articles</a>
+                                                <a href="http://news.gc2018.com/" title="Articles" data-img-src="https://www.gc2018.com/sites/default/files/news-thumb.jpg" data-p="Take a look at all of the news, video and galleries related to the Games, QBR and athletes.">Articles</a>
                                             </li>
                                             <li>
                                                 <a href="https://www.gc2018.com/news?type=gallery" title="Galleries" data-img-src="https://www.gc2018.com/sites/default/files/news-thumb.jpg" data-p="Take a look at all of the news, video and galleries related to the Games, QBR and athletes.">Galleries</a>
                                             </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-3">
-                                        <ul>
                                             <li>
                                                 <a href="https://www.gc2018.com/news?type=video" title="Videos" data-img-src="https://www.gc2018.com/sites/default/files/news-thumb.jpg" data-p="Take a look at all of the news, video and galleries related to the Games, QBR and athletes.">Videos</a>
                                             </li>
                                         </ul>
+                                    </div>
+                                    <div class="col-3">
                                     </div>
                                     <div class="col-3">
                                     </div>
