@@ -13152,7 +13152,8 @@ body.channel.about .staff {
 
 .media_embed iframe {
   margin: 20px auto !important;
-  display: block; }
+  display: block;
+  max-width: 100%; }
 
 .page-channel .follow {
   background-color: #2a3183;
