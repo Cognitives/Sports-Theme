@@ -13151,7 +13151,18 @@ body.channel.about .staff {
   margin: 20px auto !important; }
 
 .media_embed iframe {
-  margin: 20px auto !important; }
+  margin: 20px auto !important;
+  display: block; }
+
+.page-channel .follow {
+  background-color: #2a3183;
+  border: 0; }
+
+.page-channel {
+  margin-top: 250px; }
+  @media screen and (max-width: 1150px) {
+    .page-channel {
+      margin-top: 100px; } }
 
 /*# sourceMappingURL=main.css.map */
 
