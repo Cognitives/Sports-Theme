@@ -13165,6 +13165,9 @@ body.channel.about .staff {
     .page-channel {
       margin-top: 100px; } }
 
+.header > div .social-icons a:hover {
+  opacity: 1; }
+
 /*# sourceMappingURL=main.css.map */
 
 /*
